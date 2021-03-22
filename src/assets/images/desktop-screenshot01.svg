@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="395" height="252" viewBox="0 0 395 252">
+  <defs>
+    <filter id="Rectangle_126" x="0" y="0" width="395" height="252" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2604" data-name="Group 2604" transform="translate(-10.5 -3091.502)">
+    <g id="Group_2599" data-name="Group 2599">
+      <g id="Group_2598" data-name="Group 2598" transform="translate(9)">
+        <g transform="matrix(1, 0, 0, 1, 1.5, 3091.5)" filter="url(#Rectangle_126)">
+          <rect id="Rectangle_126-2" data-name="Rectangle 126" width="350" height="207" transform="translate(22.5 19.5)" fill="#fff"/>
+        </g>
+        <g id="Group_227" data-name="Group 227" transform="translate(146.283 3148.398)">
+          <g id="Group_218" data-name="Group 218" transform="translate(0 0)">
+            <text id="Ravyyn" transform="translate(52.717 29.602)" font-size="30" font-family="Orelo" letter-spacing="0.03em"><tspan x="-53.34" y="0">RAVYYN</tspan></text>
+          </g>
+        </g>
+        <g id="Group_1627" data-name="Group 1627" transform="translate(53.635 3243.363)">
+          <g id="Group_191" data-name="Group 191" transform="translate(140.536 6.197)">
+            <text id="Or" transform="translate(-0.171 11.44)" font-size="13" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">or</tspan></text>
+          </g>
+          <g id="Group_1626" data-name="Group 1626" transform="translate(-0.458 -0.361)">
+            <g id="Rectangle_128" data-name="Rectangle 128" transform="translate(-0.177 -0.002)" fill="#c47a67" stroke="#000" stroke-width="1">
+              <rect width="130" height="32" stroke="none"/>
+              <rect x="0.5" y="0.5" width="129" height="31" fill="none"/>
+            </g>
+            <text id="Upload_my_ad" data-name="Upload my ad" transform="translate(24.823 19.998)" fill="#fff" font-size="12" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">Upload My Ad</tspan></text>
+          </g>
+          <g id="Group_1625" data-name="Group 1625" transform="translate(161.302 -0.362)">
+            <g id="Group_212" data-name="Group 212" transform="translate(0 0)">
+              <g id="Rectangle_136" data-name="Rectangle 136" transform="translate(0.062 -0.001)" fill="#c47a67" stroke="#000" stroke-width="1">
+                <rect width="130" height="32" stroke="none"/>
+                <rect x="0.5" y="0.5" width="129" height="31" fill="none"/>
+              </g>
+            </g>
+            <text id="Create_Custom_Ad" data-name="Create Custom Ad" transform="translate(12.063 19.998)" fill="#fff" font-size="12" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">Create Custom Ad</tspan></text>
+          </g>
+        </g>
+        <text id="Choose_your_Campaign_type" data-name="Choose your Campaign type" transform="translate(193 3221)" font-size="12" font-family="LaNordV2.1-SemiLight, 'La Nord V2.1 Semi'" font-weight="300"><tspan x="-81.234" y="0">Choose Your Campaign Type</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

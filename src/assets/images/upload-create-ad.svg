@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="296.558" height="119.268" viewBox="0 0 296.558 119.268">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c47a67;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 14px;
+      }
+
+      .cls-2, .cls-3 {
+        font-family: "La Nord";
+      }
+
+      .cls-3 {
+        font-size: 13px;
+      }
+    </style>
+  </defs>
+  <g id="Group_2632" data-name="Group 2632" transform="translate(-59 -3350.69)">
+    <rect id="Rectangle_1629" data-name="Rectangle 1629" class="cls-1" width="296.556" height="45.128" rx="2" transform="translate(59 3424.83)"/>
+    <rect id="Rectangle_1628" data-name="Rectangle 1628" class="cls-1" width="296.556" height="45.128" rx="2" transform="translate(59.002 3350.69)"/>
+    <g id="Group_2629" data-name="Group 2629" transform="translate(160.539 3366.271)">
+      <text id="Upload_my_ad" data-name="Upload my ad" class="cls-2" transform="translate(0 11)"><tspan x="0" y="0">Upload my ad</tspan></text>
+    </g>
+    <g id="Group_2630" data-name="Group 2630" transform="translate(144.421 3440.383)">
+      <text id="Create_Custom_Ad" data-name="Create Custom Ad" class="cls-2" transform="translate(0 11)"><tspan x="0" y="0">Create Custom Ad</tspan></text>
+    </g>
+    <g id="Group_2631" data-name="Group 2631" transform="translate(201.638 3402.266)">
+      <text id="Or" class="cls-3" transform="translate(0 11)"><tspan x="0" y="0">or</tspan></text>
+    </g>
+  </g>
+</svg>

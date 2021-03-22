@@ -1,0 +1,2892 @@
+
+@font-face {
+    font-family: "Orelo";
+    src: url("../fonts/Orelo-Standard.otf") format("opentype");
+}
+@font-face {
+    font-family: "LA Nord";
+    src: url("../fonts/LANordV2.1/lanordv2.1-regular-webfont.woff") format("woff"),
+    url("../fonts/LANordV2.1/lanordv2.1-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+    font-family: "LA Nord Light";
+    src: url("../fonts/LANordV2.1/lanordv2.1-light-webfont.woff") format("woff"),
+    url("../fonts/LANordV2.1/lanordv2.1-light-webfont.woff2") format("woff2");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "LA Nord Semilight";
+    src: url("../fonts/LANordV2.1/lanordv2.1-semilight-webfont.woff") format("woff"),
+    url("../fonts/LANordV2.1/lanordv2.1-semilight-webfont.woff2") format("woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "LA Nord Light Italic";
+    src: url("../fonts/LANordV2.1/lanordv2.1-lightitalic-webfont.woff") format("woff"),
+    url("../fonts/LANordV2.1/lanordv2.1-lightitalic-webfont.woff2") format("woff2");
+}
+@font-face {
+    font-family: "LA Nord Medium";
+    src: url("../fonts/LANordV2.1/lanordv2.1-medium-webfont.woff") format("woff"),
+    url("../fonts/LANordV2.1/lanordv2.1-medium-webfont.woff2") format("woff2");
+}
+@font-face {
+    font-family: "LA Nord Bold";
+    src: url("../fonts/LANordV2.1/lanordv2.1-bold-webfont.woff") format("woff"),
+    url("../fonts/LANordV2.1/lanordv2.1-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf") format("ttf");
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Light.ttf") format("ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Black.ttf") format("ttf");
+    font-weight: 700;
+}
+
+
+* p {
+    margin-bottom: 0;
+}
+
+
+.articlesContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.articleJob {
+    background: white;
+    border: 1px solid;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.articleJob .rowColumns {
+    justify-content: flex-start;
+    height: 80px;
+}
+
+.articleJob .rowColumns > div:first-child {
+    padding-left: 0px;
+}
+
+.articleJob .influencerBottomRow > div:last-child {
+    border-right: none;
+ }
+
+.articleJobInfo {
+    width: 55%;
+    position: relative;
+}
+
+.articleJobInfo > .contractTotal {
+    top: -5px;
+}
+
+.articleJobDescription {
+    max-height: 50px;
+    overflow: hidden;
+    margin: 15px 0;
+    position: relative;
+    background: white;
+}
+
+.articleJobDescriptionMore {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: white;
+    padding: 2px 15px;
+    color: #cf7662;
+    cursor: pointer;
+}
+
+.articleJobTitle {
+    font-family: 'LA Nord Bold';
+    text-transform: uppercase;
+}
+
+.articleJobDate {
+    display: flex;
+    margin-top: 10px;
+}
+
+.articleJobDate > div {
+    margin-right: 10px;
+    letter-spacing: -1px;
+}
+
+.articleJobDate > div:last-child {
+    margin-right: 0;
+    margin-left: auto;
+    position: relative;
+}
+
+.articleJobDate .contractAmount {
+    font-size: 2rem!important;
+    margin-top: -1.3rem;
+    left: 41px;
+    font-family: "LA Nord Light", Helvetica, sans-serif;
+}
+
+.articleJobDate > div > p:nth-child(1) {
+    margin-right: 5px;
+}
+
+.articleJobDate > div > p:nth-child(2) {
+    color: #d39c8e;
+}
+
+.articleJobRatingInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articleJobRatingInfo > div:last-child {
+    text-align: center;
+}
+
+.articlePicRow {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.articlePicRow img {
+    cursor: pointer;
+    border: 1px solid;
+}
+
+
+
+
+
+
+.articleMobile {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+.articleMobile .profilePic {
+    height: 90px;
+    border-radius: 0;
+}
+
+.articleMobile .profilePic > img {
+    border-radius: 0;
+    border-radius: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.articleMobile .articleJobDate {
+    flex-direction: column;
+}
+
+.articleMobile .articleJobDescription {
+    margin-bottom: 0;
+}
+
+.articleMobile .influencerIdentity {
+    width: 60%;
+}
+
+.articleMobile .rowColumns > div > p:first-child {
+    font-family: "LA Nord Bold";
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.articleMobile .rowColumns > div > p:last-child {
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    font-size: 0.65rem;
+}
+
+.articleMobile .smallPics {
+    width: 100%;
+    max-width: initial;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    margin-top: 15px;
+}
+
+.articleMobile .smallPics > img {
+    margin-right: 15px;
+    border: 1px solid black;
+}
+
+.articleMobile .spaceBetween {
+    width: 100%;
+}
+
+
+.dashboardCampaigns .articleJob:first-child {
+    margin-top: 50px;
+}
+
+
+
+
+.bidEnter {
+    padding: 0;
+    justify-content: flex-end;
+    width: 38%;
+}
+
+.bidEnter .orangeText.left {
+    width: fit-content;
+}
+
+.bidContainer {
+    display: flex;
+    flex-direction: row!important;
+    justify-content: space-between;
+}
+
+.bidEnter > input {
+    width: 80%;
+    text-align: right;
+}
+
+.bidEnterNewCampaign {
+    margin-bottom: 20px;
+}
+
+.bidEnterNewCampaign > .dropdownRectangle {
+    border: none;
+    padding-right: 0;
+}
+
+.bidEnterNewCampaign > .dropdownRectangle input {
+    margin-bottom: 0!important;
+}
+
+.bidEnterNewCampaign > h1:first-child {
+    text-align: left;
+    font-size: 2rem;
+}
+
+
+.bidEnterTitleMobile {
+    display: none;
+}
+
+.bidEnterTitle {
+    display: flex;
+}
+
+.bidMobile {
+    padding: 85px 25px;
+}
+
+.bidMobile > p {
+    text-align: left;
+    width: 100%;
+}
+
+.bidMobile > .articleJobDate {
+    width: 100%;
+}
+
+.bidMobile > .articleJobDescription {
+    margin-top: 0px;
+}
+
+.bidMobile .bidButton {
+    color: white!important;
+    width: 100%!important;
+}
+
+.bidMobile .bidContainer {
+    align-items: center;
+}
+
+.bidMobile .bidContainer > h1 {
+    font-size: 1.5rem;
+}
+
+.bidMobile .boldRowColumns > div > p:last-child {
+    font-size: 0.6rem;
+}
+
+.bidMobile .rowColumns > div {
+    margin: 0;
+    padding: 0;
+    width: 17%;
+}
+
+.bidMobile .rowColumns > div:last-child {
+    width: 23%;
+}
+
+.buttonBeige {
+    background: #e4d7ce;
+    font-family: "LA Nord", Helvetica, sans-serif;
+    color: #212529;
+    cursor: pointer;
+    padding: 7px 30px;
+    border: 1px solid #000;
+    letter-spacing: .5px;
+    min-width: 129px;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.buttonOrange {
+    background: #cf7662;
+    font-family: "LA Nord", Helvetica, sans-serif;
+    color: #fff;
+    cursor: pointer;
+    padding: 7px 30px;
+    border: 1px solid #000;
+    letter-spacing: .5px;
+    min-width: 129px;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+
+.buttonOrangeOutline {
+    color: #c47a67!important;
+    border: 2px solid #c47a67;
+    padding: 7px 15px;
+    text-align: center;
+    letter-spacing: .5px;
+    min-width: 129px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.bigPic > img {
+    max-width: 250px;
+}
+
+
+.campaignImageInfo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
+    background: #00000047;
+    opacity: 0;
+}
+
+.campaignImageInfo > p {
+    color: white;
+    margin-left: 23%;
+}
+
+.campaignPhotos:hover > .campaignImageInfo {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.containerReview {
+    border: 1px solid black;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+
+.containerReviewImage {
+    width: 140px;
+    height: 100px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.containerReview .articleJobInfo {
+    width: 65%;
+}
+
+.containerReview .articleJobDate {
+    margin-right: 10px;
+}
+
+.containerReview .articleJobDate > div > p:nth-child(1), .containerReview .articleJobDate > div > p:nth-child(2) {
+    font-size: 0.85rem;
+}
+
+.containerReview .articleJobDate > div > p:nth-child(1) {
+    margin-right: 6px;
+}
+
+.containerReview .articleJobDescription {
+    margin-top: 5px;
+}
+
+.reveiwBodyContainer .rowColumns {
+    width: 40%;
+    height: 75px;
+    justify-content: flex-start;
+}
+
+.reveiwBodyContainer .rowColumns > div {
+    font-size: 1.5rem
+}
+
+.reveiwBodyContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reveiwBodyContainer .findInfluencerPickAction {
+    max-width: 190px;
+}
+
+.reviewProfilePic {
+    width: 210px;
+    justify-content: space-between;
+}
+
+.reviewMobileHeaderButtons {
+    display: none;
+}
+
+#reviewScreen .reviewProfilePic .boldRowColumns, #reviewScreen .reviewHeader > .flexColumn:last-child {
+    display: none;
+}
+
+#reviewScreen .profilePic {
+    width: 75px;
+    height: 75px;
+}
+
+#reviewScreen .profilePic > img {
+    width: 100%;
+    margin-top: -15px;
+}
+
+#reviewScreen .screenContainer {
+    padding: 85px 30px;
+    padding-bottom: 30px;
+}
+
+#reviewScreen.screenShow {
+    align-items: flex-start;
+    padding: 100px 0;
+    overflow: auto;
+}
+
+#reviewScreen .starRow > img {
+    max-width: 15px;
+    max-height: 17px;
+    margin: 0 3px;
+}
+
+.containerReviewImage > img {
+    width: 100%;
+}
+
+.containerReview > .articleJobDescription {
+    display: none;
+}
+
+.reviewsColumn {
+    width: 71%;
+}
+
+
+
+
+
+
+
+
+
+#favorites .findInfluencersFilterContainer > div:first-child {
+    justify-content: flex-start;
+}
+
+#favorites .findInfluencersFilterNav {
+    margin-right: 25px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contactInfo {
+    width: 66%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.contactProfile {
+    display: flex;
+    cursor: pointer;
+    height: 70px;
+    min-height: 70px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    justify-content: space-around;
+}
+
+.contactProfile .profilePic, .conversationBody .profilePic  {
+    height: 60px;
+    width: 60px;
+}
+
+#messages .profilePic > img {
+    width: 60px;
+    margin-top: -8px;
+}
+
+#messages .bidEnter input {
+    text-align: left;
+    padding-left: 0;
+    margin-right: 15px;
+}
+
+#messages #conversationContractOptions .bidEnter input {
+    text-align: right;
+}
+
+#messages .bidEnter .orangeText {
+    padding-right: 0;
+}
+
+.contactShortMessage {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.contactShortMessage > img {
+    position: absolute;
+    right: 0;
+    width: 25px;
+ }
+
+ .contactShortMessage > p {
+    line-height: 20px;
+    width: 98%;
+    height: 42px;
+    overflow: hidden;
+ }
+
+.conversation {
+    width: 75%;
+    height: 100%;
+}
+
+.conversationBody {
+    height: 430px;
+    overflow-y: auto;
+}
+
+.conversationBody .contractSent {
+    border: 1px solid black;
+    width: 65%;
+    position: relative;
+    background: #efefef;
+}
+
+.conversationBody .messageReceived .contractSent .messageSubheaderAlert {
+    position: absolute;
+    top: -55px;
+    left: 5px;
+}
+
+ .conversationBody .messageSent .contractSent .messageSubheaderAlert {
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+
+.conversationBody .contractSent > * {
+    padding: 0 15px;
+}
+
+.conversationBody .contractSent > .articleJobTitle {
+    padding-top: 15px;
+}
+
+.conversationContract a {
+    padding: 6px;
+    width: 65%;
+}
+
+.conversationBody > div {
+    margin: 75px 0;
+}
+
+.conversationBody .rowColumns {
+    justify-content: space-between;
+    background: white;
+    height: 55px;
+    padding: 0 8px;
+    width: 90%;
+    margin: 10px 5%;
+}
+
+.conversationBody .rowColumns > div {
+    min-width: 15%;
+}
+
+.conversationContract .bidEnter {
+    width: 28%;
+}
+
+.conversationBody .profilePic {
+    margin-right: 15px;
+}
+
+.conversationBodyShort {
+    height: 109px;
+}
+
+.conversationBodyVeryShort {
+    height: 18px;
+}
+
+.conversationBodyZero {
+    height: 0px;
+}
+
+.conversationContract {
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background: #efefef;
+    padding: 30px 15px;
+    width: 100%;
+    position: relative;
+}
+
+.contractTotal {
+    position: absolute;
+    right: 4%;
+    top: 17px;
+    color: #d39c8e;
+}
+
+#conversationContractOptions {
+    padding-top: 0;
+}
+
+#conversationContractOptions .campaignTitleSelect > select {
+    padding: 0!important;
+}
+
+#conversationContractOptions .dropdownRectangle {
+    margin: 15px 0;
+}
+
+#conversationContractOptions .dropdownRectangle > p, #conversationContractOptions .dropdownRectangle > input, #conversationContractOptions .dropdownRectangle > select {
+    padding: 10px 6%;
+}
+
+#conversationContractOptions .orangeText, #conversationContractOptions .bidEnter {
+    margin:0;
+}
+
+#conversationContractOptions .orangeText {
+    left: 0;
+}
+
+#messages #conversationContractDiscountCode .bidEnter input {
+    text-align: right;
+}
+
+#conversationContractDiscountCode .bidBudgetRow {
+    justify-content: space-between;
+}
+
+#conversationContractDiscountCode .orangeText {
+    font-size: 1.5rem
+}
+
+#conversationContractDiscountCode .conversationContractBody > * {
+    margin: 15px 0;
+}
+
+#conversationContractDiscountCode .textareaSubtitle {
+    left: 35px;
+    top: 25px;
+    margin-bottom: -40px;
+}
+
+.conversationContractBody {
+    width: 85%;
+}
+
+.conversationContractBody a {
+    text-align: center;
+}
+
+.conversationContractBody .flexRow.spaceBetween > .buttonBeige {
+    margin-bottom: 0;
+}
+
+.conversationContractBody > .buttonOrange.centerText.full {
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.conversationContractBody .rowColumns {
+    background: white;
+    height: 75px;
+    border: 1px solid #cccccc;
+    padding: 0 8px;
+    margin: 15px 0;
+}
+
+.conversationContractBody .subtitle {
+    color: #888888;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.conversationContract .backArrow {
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+.conversationContract .campaignTitleSelect {
+    border:none;
+    background: none;
+}
+
+.conversationContract .campaignTitleSelect select {
+    padding: 0;
+    background: none;
+    font-family: "LA Nord Bold", Helvetica, sans-serif;
+}
+
+.conversationInfo {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.conversationInfo .rowColumns > div {
+    padding: 0 5px;
+}
+
+.conversationSeen {
+    font-family: "LA Nord Semilight";
+    text-align: right;
+}
+
+.conversationWords {
+    padding: 10px 25px;
+    border:1px solid black;
+    border-radius: 30px;
+}
+
+.messageSent .conversationWords {
+    border:none;
+    background: #e7d6cd;
+}
+
+.messageSent .conversationTimestamp {
+    text-align: left;
+    margin-left: 31%;
+}
+
+.messageSubheaderAlert {
+    font-style: italic;
+}
+
+.conversationTimestamp {
+    text-align: right;
+    margin-right: 37%;
+    margin-bottom: 10px;
+}
+
+.conversationInput {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background: #efefef;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.conversationInput > a {
+    max-width: 172px;
+    padding: 10px 0;
+}
+
+.conversationInput img {
+    width: 20px;
+}
+
+.conversationInput > .speechText {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    width: 50%;
+    background: white;
+}
+
+.conversationInput > .speechText > input {
+    padding: 8px;
+    border: none;
+    width: 90%;
+}
+
+.conversationInput > .speechText > img {
+    margin-right: 15px;
+}
+
+.conversationHeader {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background: #efefef;
+    position: relative;
+}
+
+.conversationHeaderMobileClose {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-size: 3rem;
+    font-family: 'Orelo';
+    z-index: 6;
+    font-weight: 900;
+    transform: rotate(-182deg);
+    display: none;
+}
+
+.conversationHeaderHide {
+    height: 0;
+    overflow: hidden;
+}
+
+.conversationHeader > p:first-child {
+    text-transform: uppercase;
+}
+
+.conversationHeader > .elipsis {
+    right: 70px;
+    position: relative;
+}
+
+.conversationHeader .dropdownCampaignShow p, .dropdownCampaignShow a {
+    min-width: 150px;
+}
+
+.conversationHeader .dropdownCampaignShow {
+    bottom: -256px;
+    width: 200px;
+}
+
+.conversationPhoto {
+    border:1px solid black;
+    overflow: hidden;
+    max-height: 250px;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.conversationPhoto > img {
+    width: 100%;
+}
+
+.bidRequestButtons {
+    display: flex;
+    border-top: 1px solid black;
+    width: 100%;
+    padding: 15px;
+    background: #cf7662;
+    color: white;
+}
+
+.bidRequestButtons > a {
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bidRequestButtons > a:first-child {
+    border-right: 1px solid black;
+}
+
+.dayTimestamp {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.messagesSection {
+    display: flex;
+}
+
+.messageReceived {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 50px;
+}
+
+
+.messageSent {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+.messageTag {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    height: 100px;
+    background: white;
+    max-width: initial;
+}
+
+.messagesContainer {
+    width: 25%;
+    border-right: 1px solid black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.notificationsContainer {
+    width: 365px;
+    border-right: 1px solid black;
+    display: none;
+    flex-direction: column;
+    max-height: 600px;
+    overflow-y: auto;
+    position: absolute;
+    right: 40px;
+    background: white;
+    z-index: 1000;
+}
+
+.notificationsContainer .dropdownCampaignShow {
+    top: 66%;
+    right: 0px;
+}
+
+.notificationContainer {
+    display: flex;
+    cursor: pointer;
+    height: 100px;
+    min-height: 70px;
+    align-items: center;
+    border-bottom: 1px solid black;
+    justify-content: space-around;
+    padding: 15px;
+    position: relative;
+}
+
+.notificationContainer .elipsis {
+    width: 50px;
+    padding: 15px;
+ }
+
+.notificationContainer .profilePic{
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.notificationShortMessage {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: relative;
+    font-size: 0.75rem;
+}
+
+.notificationsContainerHeader {
+    background: #e6c7ac;
+    position: relative;
+    min-height: 50px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notificationsContainerHeader > .right {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.notificationInfo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.notificationOrangeCircle {
+    width: 10px;
+    height: 10px;
+    background: #c47a67;
+    border-radius: 100%;
+}
+
+.nameAndTime {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameContact {
+    font-family: "LA Nord Bold";
+    text-transform: uppercase;
+}
+
+.timeContact {
+    font-family: "LA Nord Semilight";
+    text-transform: uppercase;
+}
+
+
+.dashboardMenu {
+    justify-content: center;
+}
+
+.dashboardMenu > p {
+    margin: 0 15px;
+}
+
+
+.phoneNumberInput {
+    width: 233px!important;
+}
+
+.phoneNumberInput ~ span {
+    left: 0;
+}
+
+
+.popOut {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 50px 25px 50px;
+    background: #303132;
+    color: white;
+    position: absolute;
+    right: -230px;
+    bottom: 35px;
+    width: 300px;
+    z-index: 1;
+    display: none;
+}
+
+.popOut > p {
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+#report form > *  {
+    margin: 15px 0;
+}
+
+#reportScreen form {
+    width:50%;
+}
+
+#reportScreen form label {
+    width:90%;
+}
+
+#reportScreen form > div  {
+    margin: 25px 0px;
+}
+
+.reportedCampaignClock {
+    filter: hue-rotate(-145deg)!important;
+}
+
+
+
+
+
+
+
+
+.fourtyNine {
+    width: 49%!important;
+}
+
+
+.borderBlackBold {
+    border:3px solid black;
+}
+
+.chatTypingIcon {
+    width: 50px;
+}
+
+.childrenMargin20Vert > * {
+    margin:15px 0;
+}
+
+.coupon {
+    max-width: 80px;
+    cursor:pointer;
+}
+
+.couponIconMessages {
+    width: 50px!important;
+    cursor: pointer;
+}
+
+.delete {
+    position: absolute;
+    cursor: pointer;
+    right: 15px;
+}
+
+.giftIcon {
+    width:30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border: none!important;
+}
+
+.giftIcon:hover ~ .popOut {
+    display: flex;
+}
+
+.headerCreditNumber {
+    position: relative;
+    right: 7.2%;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: -15px;
+    font-family: "LA Nord Bold", Helvetica, sans-serif;
+}
+
+.headerCreditNumber > span {
+    position: absolute;
+        margin-left: 5px;
+}
+
+
+.elipsis {
+    width: 25px;
+    cursor: pointer;
+}
+
+.folderUploadIcon {
+    height: 50px;
+    width: 60px;
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    /* CODE TO HIDE UNTIL LATER*/
+    opacity: 0;
+    pointer-events: none;;
+}
+
+.green {
+    background-color: #06bf6d!important;
+}
+
+.greenBgWhiteTex {
+    background-color: #06bf6d!important;
+    color: white!important;
+}
+
+#findInfluencers .greenBgWhiteTex {
+    background-color: #06bf6d!important;
+    color: white!important;
+}
+
+.greenText {
+    color: #06bf6d!important;
+}
+
+.imageProfileCard {
+    width: 100%;
+    overflow: hidden;
+    height: 235px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.imageProfileCard > img {
+    width: 100%;
+    height: 100%;
+}
+
+.keepRightDesktop {
+    margin-left: auto;
+    margin-right: 25px;
+}
+
+.cardFavorite {
+    width: 26%;
+    padding: 0;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.cardFavorite .imageProfileCard > img {
+    height: initial;
+}
+
+.cardFavoriteBottomRow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid black;
+}
+
+.cardFavoriteBottomRow > a {
+    margin: 0;
+}
+
+.dropdownDiv {
+    position: relative;
+}
+
+.dropdownDiv > .dropdownCampaignShow {
+    top: 100%;
+    width: 100%;
+    bottom: initial;
+    right: initial;
+    left: 0;
+}
+
+.discountCodeP {
+    cursor: pointer;
+}
+
+.discountCodeP:hover {
+    color: #d39c8e;
+}
+
+.heartFavorite {
+    filter: drop-shadow(2px 2px 9px black);
+}
+
+.hoverHighlight:hover {
+    color:#c47a67;
+}
+
+.locationPin {
+    width: 60px!important;
+}
+
+.mobileArrowSelect {
+    background: white;
+    border-radius: 100%;
+    top: 30%;
+    margin: 0 12px;
+    font-size: 4rem;
+    font-family: 'Orelo';
+    z-index: 6;
+    font-weight: 900;
+    width: 95px;
+    transform: scale(0.5);
+}
+
+#newCampaign {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    display: none;
+}
+
+.noMaxHeight {
+    max-height: initial;
+}
+
+.photoButton {
+    top: 70px;
+    background: #ffffff45;
+    padding: 2px 10px;
+    border-radius: 100%;
+    height: 30px;
+    width: 29px;
+    cursor: pointer;
+    /* CODE TO HID UNTIL LATER*/
+    display: none;
+}
+
+.photoButtonCount {
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    /* CODE TO HID UNTIL LATER*/
+    display: none;
+}
+
+.photoButtonCount > span {
+    background: #ffffffc2;
+    border-radius: 100%;
+    margin: 0 5px;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+}
+
+.profilePicRound {
+    height: 125px;
+    width: 125px;
+    overflow: hidden;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profilePicRound > img {
+    width: 100%;
+}
+
+.right {
+    position: absolute;
+    right: 15px;
+}
+
+.rowColumns {
+    display: flex;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rowColumns > div {
+    border-right: 1px solid black;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    min-width: 15%;
+}
+
+.rowColumns > div:first-child {
+    padding-left: 0!important;
+}
+
+.rowColumns > div:last-child {
+    border-right: none;
+    padding-right: 0!important;
+}
+
+.sortHighLow {
+    width: 50px!important;
+    height: 50px!important;
+    padding: 0!important;
+    position: absolute;
+    right: -65px;
+    border: 2px solid black!important;
+    cursor: pointer;
+}
+
+.subText {
+    font-size: 0.75rem;
+}
+
+.twoButtonsPopUp {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    min-width: 300px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#findInfluencers .sortHighLow {
+    top: -5px;
+    transform: scale(0.85);
+}
+
+#findJobs .sortHighLow {
+    top: -5px;
+    transform: scale(0.8);
+}
+
+.beigeDollar {
+    border-radius: 100%;
+    background: #cf7662;
+    padding: 5px;
+    color: white;
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+}
+
+.boldRowColumns > div > p:first-child {
+    font-family: "La Nord Bold";
+    text-transform: uppercase;
+}
+
+.boldRowColumns > div > p:last-child {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.messageCameraIcons {
+    position: absolute;
+    right: 10%;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+.mobileScreenClose {
+    display: none;
+}
+
+.showFlexFixedBottom {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.smallPics {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    margin-top: 15px;
+}
+
+.smallPics > img {
+    width: 29%;
+}
+
+.searchContainer {
+    position: relative;
+    min-height: 100px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchContainer > input {
+    width: 80%;
+}
+
+.searchContainer > .searchIcon {
+    position: absolute;
+    left: 45px;
+}
+
+.searchContainer > .backArrow {
+    font-size: 3rem;
+    font-family: 'Orelo';
+    font-weight: 900;
+    top: -8px;
+    position: relative;
+}
+
+#messages .searchContainer > .searchIcon {
+    width: 18px;
+    height: 18px;
+}
+
+#messages .searchContainer > input {
+    padding: 8px 0;
+    font-family: "LA Nord Semilight", Helvetica, sans-serif;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+
+#messages .searchContainer {
+    min-height: 80px;
+    background: #eee;
+    justify-content: space-evenly;
+}
+
+.starRow {
+    margin: 4px 0;
+}
+
+.starRow > img {
+    max-width: 15px;
+    max-height: 15px;
+}
+
+.starRow ~ p {
+    cursor: pointer;
+}
+
+.dropdownRectangle > .starRow {
+    width: auto;
+}
+
+.fadedStar {
+    opacity: 0.5;
+}
+
+.deleteChatHeader {
+    display: none;
+    cursor: pointer;
+    color: white;
+    height: 70px;
+    min-height: 70px;
+    align-items: center;
+    background: #cb484a;
+    border-bottom: 1px solid black;
+    justify-content: space-around;
+}
+
+.deleteChatHeader .elipsis {
+    filter: invert(1);
+}
+
+.userChatHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+.categorySelect {
+    margin-bottom: 35px;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.categorySelect > p {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#new-campaign-modal .countryListFilters {
+    height: fit-content;
+    width: 49%!important;
+}
+
+#new-campaign-modal .countryListFilters > .country-dropdown {
+    padding-top: 13px;
+}
+
+.dropdownRectangle > input, .dropdownRectangle > select, .dropdownRectangle > div, .dropdownRectangle > select, .dropdownRectangle > p {
+    padding: 15px;
+}
+
+.showMobile, .showMobileFlex {
+    display: none;
+}
+
+
+
+
+
+/* FILTER STYLES */
+
+
+
+
+.filterInput {
+    border: none;
+    padding-left: 0px!important;
+    width: 100%;
+}
+
+.filterQuestionMark {
+    margin-right: 15px;
+    min-width: 20px;
+}
+
+
+.filterNavContainer {
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.filterNav {
+    background-color: white;
+    display: flex;
+    padding: 7px 2%;
+    border: 1px solid black;
+    min-width: 170px;
+    max-width: 210px;
+    justify-content: space-between;
+    width: 30%;
+    cursor: pointer;
+}
+
+.filterNav img {
+    width: 20px;
+}
+
+.multiNavContainer {
+    display: flex;
+    width: 67%;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+/* DROPDOWN SYLES */
+
+.listDropdown > div {
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* FONT STYLES */
+
+#mediumFont, .mediumFont {
+    font-family: 'LA Nord Medium';
+}
+
+#boldFont, .boldFont {
+    font-family: 'LA Nord Bold';
+}
+
+
+
+
+
+/* COLORS */
+
+.orangeText {
+    color:#c47A67;
+}
+
+
+
+
+
+
+
+
+/* FUNCTIONAL */
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+
+
+@media only screen and (min-width: 790px) {
+    
+    .conversationContract {
+        width: 60%;
+        position: absolute;
+        bottom: 40px;
+        left: 26%;
+        z-index: 1000;
+        border-radius: 30px;
+        border: 1px solid;
+    }
+
+    #conversationContract .flexRow.spaceBetween {
+        margin-top: 30px;
+    }
+
+    #conversationContract .buttonOrange.centerText.full {
+        padding: 7px 0;
+        margin-left: auto;
+        min-width: 60px;
+        width: 40%!important;
+    }
+
+    #conversationContract .flexRow.spaceBetween input {
+        padding: 0;
+        text-align: right;
+    }
+
+    #conversationContract .articleJobDate > div:last-child {
+        margin-left: 30px;
+    }
+
+}
+
+
+
+
+/* MEDIA BREAK POINTS */
+
+@media only screen and (max-width: 780px) {
+
+    .beigeDollar {
+        position: absolute;
+        left: 40px;
+    }
+
+    .conversation {
+        display: none;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .conversationContract .backArrow {
+        position: relative;
+        top: -120px;
+    }
+
+    .conversationContract a {
+        width: 100%;
+    }
+
+    .conversationContractBody .flexRow.spaceBetween {
+        flex-direction: column;
+        display: block;
+    }
+
+    .conversationHeader {
+        display: none;
+    }
+
+    .conversationHeader .instagramHandle {
+        display: none;
+    }
+
+    .conversationInfo {
+        width: 75%;
+    }
+
+    .conversationInput > a {
+        display: none;
+    }
+
+    .conversationIconBlackUpload {
+        display: none;
+    }
+
+    .conversationInput > .speechText {
+        width: 85%;
+        border-radius: 30px;
+    }
+
+    .conversationInput > .speechText > input {
+        padding-left: 45px;
+        border-radius: 30px;
+    }
+
+    .contactShortMessage > img {
+        display: none;
+    }
+
+    .conversationContractBody h1.right {
+        display: none;
+    }
+
+    #conversationContract .buttonOrange {
+        margin-top: 15px;
+    }
+
+    .messagesContainer {
+        width: 100%;
+    }
+
+    .messageReceived {
+        padding-left: 15px;
+    }
+
+    #messages .screenShowMobile {
+        position: fixed;
+        z-index: 11;
+    }
+
+    .mobileArticleButton {
+        padding: 7px 15px;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border: 0;
+    }
+    
+    .showMobile {
+        display: initial;
+    }
+
+    .showMobileFlex {
+        display: flex;
+    }
+
+
+
+
+    #messages .couponIconMessages {
+        position: absolute;
+        right: 50px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+.dashboardReviewsColumn {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.dashboardReviewsColumn > * {
+    margin: 15px 0;
+}
+
+.dashboardReviewsColumn > a {
+    padding: 15px;
+    text-align: center;
+}
+
+.dashboardReviewsColumn > .dropdownRectangle {
+    justify-content: flex-start;
+}
+
+.textAreaBig {
+    width: 100%;
+    padding: 21px 15px;
+    border: 1px solid #000;
+    border-top: none;
+    margin-bottom: 0;
+}
+
+.textareaContainer > label {
+    padding: 15px
+}
+
+.labelDescription {
+    padding: 8px 34px;
+    font-size: 1.125rem;
+}
+
+#reviewScreen #mobileScreenExit {
+    display: none;
+}
+
+#reviewScreen .screenContainer {
+    z-index: 11;
+}
+
+#reviewScreen #closeInfluencerPickMobile {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CODE TO MOVE INTO SPECIFIC PAGEs */
+
+
+/*FIND JOBS PAGE */
+
+#findJobs main {
+    display: flex;
+    justify-content: center;
+    background: #e7d6cd;
+}
+
+#findJobs .articlesContainer {
+    flex-direction: column;
+}
+
+#findJobs .articlePicRow {
+    width: 25%;
+}
+
+#findJobs .articleJobButtons {
+    width: 20%;
+}
+
+#findJobs .multiNavContainer {
+    justify-content: flex-start;
+}
+
+#findJobs .multiNavContainer .filterNav:first-child {
+    margin-right: 50px;
+}
+
+#findJobs .filterNavContainer {
+    margin-bottom: 50px;
+}
+
+#findJobs .campaignDashboardSubheader, #findJobs .campaignNav {
+    display: none;
+}
+
+#findJobs .dropdownRectangle {
+    padding: 0;
+}
+
+#findJobs .filters > div > div:last-child {
+    margin-bottom: auto;
+}
+
+
+/*
+#findJobs .desktopFiltersClear {
+    bottom: -78px;
+    width: 150px;
+    right: 15%;
+    position: absolute;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCREENS */
+
+.bidBudgetRow {
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.bidBudgetRow > p:first-of-type {
+    margin-right: 15px;
+}
+
+#bidViewScreen, #couponScreen {
+    overflow-y: auto;
+}
+
+#bidViewScreen > .screenContainer {
+    top: 150px;
+}
+
+#bidViewScreen .rowColumns {
+    width: 100%;
+}
+
+#bidViewScreen .boldRowColumns > div > p:last-child {
+    font-size: 0.7rem;
+}
+
+#bidViewScreen .screenContainer > p, #bidViewScreen .screenContainer > div, #bidViewScreen .screenContainer > textarea, #bidViewScreen .screenContainer > a {
+    width: 60%;
+}
+
+#couponScreen > .screenContainer {
+    top: 0;
+    padding: 25px 0;
+}
+
+#couponScreen > div > .childrenMargin20Vert {
+    width: 56%;
+}
+
+#couponScreen textarea, #couponScreen input {
+    pointer-events: none;
+}
+
+
+
+
+#instagramLinkScreen .dropdownRectangle {
+    padding: 0;
+    min-width: 42%;
+    margin: 10px 0;
+}
+
+#instagramLinkScreen a {
+    max-width: 42%;
+    margin-top: 15px;
+}
+
+
+#instagramLinkScreen .subtitle {
+    margin: 30px 0;
+}
+
+
+
+
+#paypalSettingsScreen .viewJobNav a {
+    width: 51%;
+}
+
+#paypalHistorySettings {
+    width: 80%
+}
+
+.paymentAmount {
+    margin-right: 25px;
+}
+
+.paypalPaymentArticle {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 15px 25px;
+}
+
+.paypalPaymentArticle .flexRow:nth-child(2) {
+    margin-top: 10px;
+}
+
+
+
+
+#photoViewJobTitle {
+    margin-bottom: 25px;
+}
+
+#photoViewScreen .articlePicRow {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photoViewScreen .bigPic > img {
+    max-width: 500px;
+}
+
+#photoViewScreen .smallPics {
+    width: 73%;
+    margin-top: 25px;
+    max-width: initial;
+}
+
+#photoViewScreen .smallPics > img {
+    max-width: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#new-campaign-budget .list-unstyled {
+    position: relative;
+}
+
+#customBudgetShow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:#eeeeee;
+    display: none;
+    align-items: center;
+}
+
+#customBudgetShow input {
+    margin: 0;
+    background: none;
+}
+
+#customBudgetShow h1{
+    font-size: 1.3rem;
+ }
+
+.dropdownInput {
+    border: none!important;
+    margin: 0!important;
+}
+
+.modal {
+    overflow: auto!important;
+}
+
+.photoUploadUserAd {
+    height: 450px;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    padding: 100px 15px;
+    flex-direction: column;
+}
+
+.targetInterestsButtons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.targetInterestsButtons > p {
+    padding: 10px 20px;
+    border: 1px solid black;
+    margin: 15px 3px;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+
+.textareaSubtitle {
+    position: relative;
+    top: 50px;
+    left: -22%;
+    font-family: 'LA Nord Semilight';
+}
+
+.productDescriptionTextArea {
+    height: 170px;
+    line-height: 22px;
+    font-family: 'LA Nord Semilight';
+    font-size: 1rem;
+    padding: 69px 34px 0px 34px;
+}
+
+
+
+
+
+
+#influencerDashboard .dashboardSubtitle {
+    /*margin-top: 100px; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#influencerDashboard .pendingCampaign .dropdownCampaignShow {
+    bottom: -262px;
+ }
+
+
+#influencerDashboard .dashboardDataTypes div:nth-of-type(1) {
+    width: 12%;
+}
+
+#influencerDashboard .dashboardDataTypes div:nth-of-type(2) {
+    width: 16%;
+}
+
+#influencerDashboard .dashboardDataTypes div:nth-of-type(3) {
+    width: 15%;
+}
+
+#influencerDashboard .dashboardDataTypes div:nth-of-type(4) {
+    width: 13%;
+}
+
+#influencerDashboard .dashboardDataTypes div:nth-of-type(5) {
+    width: 12%;
+}
+
+#influencerDashboard .dashboardDataTypes div:nth-of-type(6) {
+    width: 12%;
+}
+
+#influencerDashboard .dashboardDataTypes div:nth-of-type(7) {
+    width: 17%;
+}
+
+
+#influencerDashboard .dashboardDataTypeRibbon {
+    width: 12%;
+}
+
+
+ #influencerDashboard .dashboardDataTypeRibbonSelected1 {
+    width: 18%;
+    left: 11%;
+}
+
+#influencerDashboard .dashboardDataTypeRibbonSelected2 {
+    width: 17%;
+    left: 28%;
+}
+
+#influencerDashboard .dashboardDataTypeRibbonSelected3 {
+    width: 13%;
+    left: 44%;
+}
+
+#influencerDashboard .dashboardDataTypeRibbonSelected4 {
+    width: 14%;
+    left: 56%;
+}
+
+#influencerDashboard .dashboardDataTypeRibbonSelected5 {
+    width: 13%;
+    left: 69%;
+}
+
+#influencerDashboard .dashboardDataTypeRibbonSelected6 {
+    width: 19%;
+    left: 81%;
+}
+
+
+
+#influencerDashboard .dashboardDataTypesMobile div p {
+    width: 170px;
+}
+
+#influencerDashboard .dashboardDataTypesMobile div:nth-of-type(4) > p {
+    width: 120px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 780px) {
+
+    #findJobs .filterNavContainer, #findJobs .categorySelect {
+        display: none;
+    }
+
+    #findJobs #influencerFilters, #findJobs #influencerSortBy {
+        display: none;
+    }
+
+    #findJobs .campaignDashboardSubheader, #findJobs .campaignNav {
+        display: flex;
+    }
+
+    #findJobs .campaignNav input {
+        width: 100%;
+    }
+
+    #findJobs .campaignNav .searchDashboardContainer {
+        width: 70%;
+    }
+
+    #findJobs .campaignNav p {
+        padding: 5px;
+    }
+
+    #findJobs .campaignNav p:nth-child(4) {
+        margin-right: auto;
+        margin-left: 50px;
+    }
+
+    #findJobs .filtersMobile > div {
+        min-width: 185px;
+    }
+
+    #findJobs #mobileInfluencerPick {
+        width: 100%;
+        height: 100%;
+    }
+
+    #findJobs #mobileInfluencerPick .articlePicRow {
+        width: 100%;
+        align-items: center;
+    }
+
+    #findJobs #mobileInfluencerPick .bigPic {
+        width: 100%;
+    }
+
+    #findJobs #mobileInfluencerPick .bigPic > img, #findJobs #mobileInfluencerPick .smallPics {
+        width: 90%;
+        max-width: none;
+        margin-top: 15px;
+    }
+
+    #findJobs #mobileInfluencerPick .smallPics > img {
+        max-width: 80px;
+    }
+
+    #findJobs #mobileInfluencerPick a {
+        padding: 15px 0px;
+        width: 90%;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+
+    #findJobs #mobileInfluencerPick .screenContainer a {
+        color: white;
+    }
+
+    #findJobs #mobileInfluencerPick .screenContainer > a:last-child {
+        color: black;
+    }
+
+    #findJobs .findInfluencersSectionMobileInfluencerPick {
+        height: 690px;
+    }
+
+
+
+
+    /* SCREEN OVERLAY CORRECTION FOR JOBS/INFLUENCERDAHS */
+    /* NEED TO FIND BETTER SOLUTION IF POSSIBLE */
+
+    #findJobs .screen {
+        position: fixed;
+        top: 0;
+    }
+
+    #instagramLinkScreen .screenContainer {
+        height:100%;
+    }
+
+
+
+
+
+
+
+
+
+    #instagramLinkScreen .dropdownRectangle {
+        padding: 0;
+        min-width: 90%;
+        margin: 10px 0;
+    }
+
+    #instagramLinkScreen a {
+        max-width: 90%;
+        margin-top: 15px;
+    }
+
+
+    #instagramLinkScreen .subtitle {
+        margin: 30px 0;
+        width: 90%;
+        text-align: center;
+    }
+
+
+
+
+
+
+    .containerReview > .articleJobDescription {
+        display: flex;
+        width: 90%;
+        margin-top: -5px;
+    }
+
+    .reveiwBodyContainer .rowColumns {
+        width: 100%;
+        height: 40px;
+        transform: scale(1.1);
+    }
+
+    .articleJobInfo .articleJobDescription {
+        display: none;
+    }
+
+    .reveiwBodyContainer {
+        width: 100%;
+    }
+
+    .containerReviewImage {
+        width: 130px;
+        height: 100px; 
+    }
+
+    .containerReview .articleJobInfo {
+        width: 55%;
+    }
+
+    .containerReview {
+        flex-wrap: wrap;
+        border-left: none;
+        border-right: none;
+    }
+
+    #conversationContractOptions .dropdownRectangle > .dropDownToggle {
+        right: 10px
+    }
+
+    .headerCreditNumber {
+        margin: 0;
+    }
+
+    .keepRightDesktop {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .fitlersMobileSelect {
+        padding: 0!important;
+        position: relative;
+        align-items: center;
+    }
+
+    .fitlersMobileSelect > select {
+        border: none;
+        appearance: none;
+        background: none;
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .messageSent {
+        padding: 0px 4%;
+    }
+
+    .mobileScreenClose {
+        position: absolute;
+        display: block;
+        top: -3px;
+        left: 15px;
+        font-size: 3rem;
+        font-family: 'Orelo';
+        z-index: 6;
+        font-weight: 900;
+    }
+
+    .searchContainer > .searchIcon {
+        left: 55px;
+    }
+
+    #messages .searchContainer > .searchIcon {
+        left: 17%;
+    }
+
+    .reviewHeader {
+        padding: 20px;
+    }
+    
+
+    .reviewMobileHeaderButtons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .reviewMobileHeaderButtons > a {
+        padding: 15px;
+        width: 90%;
+    }
+
+    #reviewScreen .companyName {
+        display: none;
+    }
+
+    #reviewScreen .igHandle {
+        display: block;
+    }
+
+    #reviewScreen .reviewProfilePic .boldRowColumns, #reviewScreen .reviewHeader > .flexColumn:last-child {
+        display: flex;
+    }
+
+    #reviewScreen .articleJobInfo > div:first-of-type {
+        flex-direction: column-reverse;
+    }
+
+    #reviewScreen .articleJobInfo > div:nth-of-type(2) {
+        flex-direction: column;
+    }
+
+    #reviewScreen .articleJobTitle {
+        margin-top: 5px;
+    }
+
+    #reviewScreen .findInfluencerPickAction, #reviewScreen .articleJobsButtons {
+        display: none;
+    }
+
+    #reviewScreen .profilePic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .reviewProfilePic {
+        width: 215px;
+    }
+
+    .reviewProfilePic .rowColumns {
+        margin-top: 10px
+    }
+
+    #reviewScreen .photoViewJobTitle {
+        margin-top: 100px;
+    }
+
+    #reviewScreen .reviewsColumn {
+        width: 100%;
+    }
+
+    #reviewScreen .screenContainer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height:100%;
+        padding: 85px 0;
+        justify-content: flex-start;
+        overflow-y: auto;
+    }
+
+    #reviewScreen #closeInfluencerPickMobile {
+        display: block;
+    }
+
+
+
+
+
+    #report .reportInfluencerName > div {
+        width: 100%!important;
+        margin: 15px 0;
+    }
+
+    #report .field-wrap.country-dropdown .dropdown .checkbox label, #report .field-wrap.interests-dropdown .dropdown .checkbox label {
+        width: 80%;
+    }
+
+
+
+
+    .articleJobDate > div > p:nth-child(2) {
+        font-size: 0.9rem;
+    }
+
+    .articleJobDate > div > p:nth-child(1) {
+        font-size: 0.9rem;
+    }
+
+    #findJobsActiveContainerMobile .articleMobile .rowColumns > div {
+        padding: 0 8px;
+    }
+
+    .bidContainer {
+        margin: 15px 0;
+    }
+
+    #bidViewScreen .screenContainer > p, #bidViewScreen .screenContainer > div, #bidViewScreen .screenContainer > textarea, #bidViewScreen .screenContainer > a {
+        width: 90%;
+    }
+
+    #bidViewScreen > .screenContainer, #couponScreen > .screenContainer {
+        top: 0;
+    }
+
+    .boldRowColumns > div > p:first-child {
+        font-size: 0.8rem;
+    }
+
+    .boldRowColumns > div > p:last-child {
+        font-size: 0.52rem;
+    }
+
+    .cardFavorite {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        margin-bottom: 0;
+    }
+
+    #favorites #filtersMobile {
+        display: none;
+    }
+
+    #couponScreen #mobileScreenExit {
+        background: none;
+        border: none;
+    }
+
+    #couponScreen .projectTitle {
+        display: none;
+    }
+
+    #couponScreen .childrenMargin20Vert {
+        width: 90%;
+    }
+
+    #couponScreen .bidEnter {
+        align-items: center;
+    }
+
+    #couponScreen .bidEnter > h1 {
+        font-size: 1.5rem;
+    }
+
+    .contactProfile {
+        min-height: 90px;
+    }
+
+    .conversationBody .rowColumns > div {
+        margin: 0;
+    }
+
+    .conversationBody .contractSent {
+        width: 95%;
+    }
+
+    .messageReceived .contractSent {
+        margin-top: 50px;
+        left: -4%;
+        position: relative;
+    }
+
+    .conversationBody .contractSent > .articleJobTitle {
+        font-size: 0.8rem;
+    }
+
+    .conversationBody .profilePic {
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+    }
+
+    .conversationBody .profilePic > img {
+        width: 30px!important;
+    }
+
+    .conversationContractBody {
+        width: 95%;
+    }
+
+    .conversationContract .backArrow {
+        display: none;
+    }
+
+    .conversationContract .campaignTitleSelect select {
+        width: 88%;
+    }
+
+
+    #conversationContractOptions .dropdownRectangle {
+        width: 100%!important;
+    }
+
+    #conversationContractOptions .bidEnter {
+        width: 55%!important;
+    }
+
+    #conversationContractOptions .orangeText {
+        font-size: 1.5rem;
+    }
+
+    .conversationHeaderMobileClose {
+        direction: initial;
+    }
+
+    .flexRowImportant {
+        flex-direction: row!important;
+    }
+
+    .bidEnterTitleMobile {
+        display: flex;
+    }
+
+    .bidEnterTitle {
+        display: none;
+    }
+
+    .dashboardReviewsColumn {
+        width: 90%;
+    }
+
+    .messageCameraIcons {
+        display: flex;
+    }
+
+    .notificationsContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        max-height: none;
+    }
+
+    .notificationsContainerHeader {
+        background: #e4d7ce;
+        height: 60px;
+    }
+
+    .notificationOrangeCircle {
+        display: none;
+    }
+
+    #messages .notificationOrangeCircle {
+        display: block;
+    }
+
+
+    .notificationContainer .profilePic {
+        height: 75px;
+        width: 75px;
+    }
+
+    .notificationContainer .profilePic img {
+        transform: scale(0.7);
+    }
+
+
+
+    .mobilePickName {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: 50px;
+        z-index: 5;
+        font-size: 2.5rem;
+    }
+
+    .smallPics > img {
+        max-width: 60px;
+    }
+
+    .sortHighLow {
+        display: none;
+    }
+
+}

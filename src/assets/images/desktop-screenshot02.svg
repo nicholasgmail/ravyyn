@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="297.001" height="137.826" viewBox="0 0 297.001 137.826">
+  <g id="Group_2635" data-name="Group 2635" transform="translate(13238 8856)">
+    <g id="Group_2634" data-name="Group 2634" transform="translate(-13262 -9259)">
+      <g id="Group_2087" data-name="Group 2087" transform="translate(24 402.001)">
+        <g id="Group_615" data-name="Group 615">
+          <g id="Group_614" data-name="Group 614" transform="translate(0 0)">
+            <g id="Group_612" data-name="Group 612" transform="translate(0 1)">
+              <g id="Group_2327" data-name="Group 2327">
+                <g id="Rectangle_129" data-name="Rectangle 129" transform="translate(0 -0.001)" fill="#e4d7ce" stroke="#000" stroke-width="1">
+                  <rect width="297" height="32" stroke="none"/>
+                  <rect x="0.5" y="0.5" width="296" height="31" fill="none"/>
+                </g>
+                <text id="Budget" transform="translate(13 20.999)" font-size="14" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">Budget</tspan></text>
+              </g>
+            </g>
+            <g id="Group_613" data-name="Group 613" transform="translate(0 31.6)">
+              <g id="Rectangle_552" data-name="Rectangle 552" transform="translate(0 0.4)" fill="#fff" stroke="#000" stroke-width="1">
+                <rect width="81" height="45" stroke="none"/>
+                <rect x="0.5" y="0.5" width="80" height="44" fill="none"/>
+              </g>
+              <g id="Rectangle_553" data-name="Rectangle 553" transform="translate(71 0.4)" fill="#fff" stroke="#000" stroke-width="1">
+                <rect width="82" height="45" stroke="none"/>
+                <rect x="0.5" y="0.5" width="81" height="44" fill="none"/>
+              </g>
+              <g id="Rectangle_554" data-name="Rectangle 554" transform="translate(144 0.4)" fill="#fff" stroke="#000" stroke-width="1">
+                <rect width="81" height="45" stroke="none"/>
+                <rect x="0.5" y="0.5" width="80" height="44" fill="none"/>
+              </g>
+              <g id="Rectangle_555" data-name="Rectangle 555" transform="translate(216 0.4)" fill="#fff" stroke="#000" stroke-width="1">
+                <rect width="81" height="45" stroke="none"/>
+                <rect x="0.5" y="0.5" width="80" height="44" fill="none"/>
+              </g>
+            </g>
+            <text id="_35" data-name="$35" transform="translate(166 59.999)" font-size="14" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">$35</tspan></text>
+            <text id="_25" data-name="$25" transform="translate(94 59.999)" font-size="14" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">$25</tspan></text>
+            <text id="Custom" transform="translate(230 59.999)" font-size="14" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">Custom</tspan></text>
+            <text id="_15" data-name="$15" transform="translate(24 59.999)" font-size="14" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">$15</tspan></text>
+          </g>
+        </g>
+        <g id="Group_2086" data-name="Group 2086" transform="translate(0.271 93.45)">
+          <path id="Path_151" data-name="Path 151" d="M0,0H296.225V45.375H0Z" transform="translate(0 0)" fill="#c47a67"/>
+          <g id="Group_396" data-name="Group 396" transform="translate(117.219 15.935)">
+            <text id="Post_Job" data-name="Post Job" transform="translate(-0.489 10.615)" fill="#fff" font-size="14" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">Post Job</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="304" height="300" viewBox="0 0 304 300">
+  <defs>
+    <filter id="Rectangle_1129" x="0" y="0" width="304" height="300" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-opacity="0.451"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1741" data-name="Group 1741" transform="translate(21.86 19.152)">
+    <g id="Group_1736" data-name="Group 1736" transform="translate(0.931 0.348)">
+      <g transform="matrix(1, 0, 0, 1, -22.79, -19.5)" filter="url(#Rectangle_1129)">
+        <rect id="Rectangle_1129-2" data-name="Rectangle 1129" width="259" height="255" transform="translate(22.5 19.5)" fill="#fff"/>
+      </g>
+      <g id="Rectangle_129" data-name="Rectangle 129" transform="translate(26.141 157.55)" fill="#fff" stroke="#000" stroke-width="1">
+        <rect width="206.45" height="25.911" stroke="none"/>
+        <rect x="0.5" y="0.5" width="205.45" height="24.911" fill="none"/>
+      </g>
+      <text id="Minimum_Follower_Count" data-name="Minimum Follower Count" transform="translate(37.542 173.692)" font-size="11" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">Minimum Follower Count</tspan></text>
+      <path id="Path_164" data-name="Path 164" d="M0,3.218,4.055,0,7.974,3.074" transform="translate(222.406 171.776) rotate(180)" fill="none" stroke="#000" stroke-width="1"/>
+      <g id="Rectangle_129-2" data-name="Rectangle 129" transform="translate(26.141 190.982)" fill="#fff" stroke="#000" stroke-width="1">
+        <rect width="206.45" height="25.911" stroke="none"/>
+        <rect x="0.5" y="0.5" width="205.45" height="24.911" fill="none"/>
+      </g>
+      <text id="Target_Audience_Interests_" data-name="Target Audience Interests " transform="translate(37.542 207.125)" font-size="11" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">Target Audience Interests </tspan></text>
+      <path id="Path_164-2" data-name="Path 164" d="M0,3.218,4.055,0,7.974,3.074" transform="translate(222.406 205.488) rotate(180)" fill="none" stroke="#000" stroke-width="1"/>
+      <g id="Path_160" data-name="Path 160" transform="translate(25.994 89.847)" fill="#fff">
+        <path d="M 98.89131927490234 25.47942352294922 L 0.500005841255188 25.47942352294922 L 0.500005841255188 0.4999983012676239 L 98.89131927490234 0.4999983012676239 L 98.89131927490234 25.47942352294922 Z" stroke="none"/>
+        <path d="M 1 1.000003814697266 L 1 24.97941780090332 L 98.39131164550781 24.97941780090332 L 98.39131164550781 1.000003814697266 L 1 1.000003814697266 M 0 3.814697265625e-06 L 99.39131164550781 3.814697265625e-06 L 99.39131164550781 25.97941780090332 L 0 25.97941780090332 L 0 3.814697265625e-06 Z" stroke="none"/>
+      </g>
+      <text id="Gender" transform="translate(37.196 106.65)" font-size="11" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">Gender</tspan></text>
+      <g id="Path_160-2" data-name="Path 160" transform="translate(132.694 89.847)" fill="#fff">
+        <path d="M 98.89131927490234 25.47942352294922 L 0.500005841255188 25.47942352294922 L 0.500005841255188 0.4999983012676239 L 98.89131927490234 0.4999983012676239 L 98.89131927490234 25.47942352294922 Z" stroke="none"/>
+        <path d="M 1 1.000003814697266 L 1 24.97941780090332 L 98.39131164550781 24.97941780090332 L 98.39131164550781 1.000003814697266 L 1 1.000003814697266 M 0 3.814697265625e-06 L 99.39131164550781 3.814697265625e-06 L 99.39131164550781 25.97941780090332 L 0 25.97941780090332 L 0 3.814697265625e-06 Z" stroke="none"/>
+      </g>
+      <text id="Country" transform="translate(143.896 106.65)" font-size="11" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">Country</tspan></text>
+      <path id="Path_162" data-name="Path 162" d="M0,3.218,4.055,0,7.974,3.074" transform="translate(115.704 104.638) rotate(180)" fill="none" stroke="#000" stroke-width="1"/>
+      <path id="Path_163" data-name="Path 163" d="M0,3.218,4.055,0,7.974,3.074" transform="translate(222.406 104.638) rotate(180)" fill="none" stroke="#000" stroke-width="1"/>
+      <g id="Rectangle_129-3" data-name="Rectangle 129" transform="translate(26.141 123.28)" fill="#fff" stroke="#000" stroke-width="1">
+        <rect width="206.45" height="25.911" stroke="none"/>
+        <rect x="0.5" y="0.5" width="205.45" height="24.911" fill="none"/>
+      </g>
+      <text id="Age_Range" data-name="Age Range" transform="translate(37.542 140.26)" font-size="11" font-family="LaNordV2.1-Regular, 'La V2.1'"><tspan x="0" y="0">Age Range</tspan></text>
+      <text id="_300" data-name="$300" transform="translate(107.203 139.475)" fill="#c47a67" font-size="8" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="0" y="0">25</tspan></text>
+      <text id="_500" data-name="$500" transform="translate(223.939 139.475)" fill="#c47a67" font-size="8" font-family="Arial-BoldMT, Arial" font-weight="700"><tspan x="-8.898" y="0">60</tspan></text>
+      <rect id="Rectangle_570" data-name="Rectangle 570" width="94.449" height="1.672" transform="translate(118.906 135.817)" fill="#e4d7ce"/>
+      <rect id="Rectangle_571" data-name="Rectangle 571" width="41.791" height="1.672" transform="translate(133.951 135.817)" fill="#c47a67"/>
+      <g id="Ellipse_163" data-name="Ellipse 163" transform="translate(133.31 132.785)" fill="#fff">
+        <path d="M 4.175264358520508 7.041244506835938 C 2.424424409866333 7.041244506835938 1.000004410743713 5.686204433441162 1.000004410743713 4.02062463760376 C 1.000004410743713 2.355044603347778 2.424424409866333 1.000004649162292 4.175264358520508 1.000004649162292 C 5.926104545593262 1.000004649162292 7.350524425506592 2.355044603347778 7.350524425506592 4.02062463760376 C 7.350524425506592 4.816284656524658 7.020624160766602 5.562724590301514 6.396494388580322 6.179264545440674 C 5.851864337921143 6.719574451446533 5.022064208984375 7.041244506835938 4.175264358520508 7.041244506835938 Z" stroke="none"/>
+        <path d="M 4.175264358520508 2.000004768371582 C 2.975824356079102 2.000004768371582 2.000004291534424 2.906454563140869 2.000004291534424 4.02062463760376 C 2.000004291534424 5.13479471206665 2.975824356079102 6.041244506835938 4.175264358520508 6.041244506835938 C 4.868674278259277 6.041244506835938 5.412734031677246 5.746604919433594 5.693734169006348 5.46783447265625 C 6.129544258117676 5.037324905395508 6.350524425506592 4.550414562225342 6.350524425506592 4.02062463760376 C 6.350524425506592 2.906454563140869 5.374704360961914 2.000004768371582 4.175264358520508 2.000004768371582 M 4.175264358520508 4.76837158203125e-06 C 6.481194496154785 4.76837158203125e-06 8.350523948669434 1.800094604492188 8.350523948669434 4.02062463760376 C 8.350523948669434 5.110894680023193 7.899874210357666 6.099814414978027 7.099254608154297 6.890684604644775 C 6.409604072570801 7.574874877929688 5.348994255065918 8.041244506835938 4.175264358520508 8.041244506835938 C 1.86933422088623 8.041244506835938 4.76837158203125e-06 6.241154670715332 4.76837158203125e-06 4.02062463760376 C 4.76837158203125e-06 1.800094604492188 1.86933422088623 4.76837158203125e-06 4.175264358520508 4.76837158203125e-06 Z" stroke="none" fill="#c57a67"/>
+      </g>
+      <g id="Ellipse_164" data-name="Ellipse 164" transform="translate(169.055 132.475)" fill="#fff" stroke="#c57a67" stroke-width="2">
+        <circle cx="4.179" cy="4.179" r="4.179" stroke="none"/>
+        <circle cx="4.179" cy="4.179" r="3.179" fill="none"/>
+      </g>
+      <g id="Group_1599" data-name="Group 1599" transform="translate(50.37 35.223)">
+        <text id="Influencer_Settings" data-name="Influencer Settings" transform="translate(79.34 22.777)" font-size="23" font-family="Orelo-Standard, Orelo Standard" letter-spacing="0.03em"><tspan x="-90.103" y="0">Influencer Settings</tspan></text>
+      </g>
+    </g>
+    <text id="X" transform="translate(237.641 25.348)" font-size="18" font-family="Orelo-Standard, Orelo Standard"><tspan x="0" y="0">X</tspan></text>
+  </g>
+</svg>
