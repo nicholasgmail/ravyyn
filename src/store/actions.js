@@ -11,7 +11,7 @@ const onTokenError = (err, commit) => {
 }
 
 const onTokenSuccess = (response, commit) => {
-  console.log('onTokenSuccess', {response});
+  console.log('onTokenSuccess', { response });
   let { token, expires, userId } = response.data;
   expires = dayjs().add(expires, 'second').format();
   console.log('expiresDate', expires);
@@ -28,11 +28,11 @@ const login = ({ commit }, data) => {
     api
       .post("/user/login/email", data)
       .then(res => resolve(onTokenSuccess(res, commit)))
-      // .catch(err => reject(onTokenError(err, commit)));
+    // .catch(err => reject(onTokenError(err, commit)));
   });
 }
 
-const socialLogin = ({commit}, data) => {
+const socialLogin = ({ commit }, data) => {
   return new Promise((resolve) => {
     commit("auth_request");
     api
@@ -41,8 +41,8 @@ const socialLogin = ({commit}, data) => {
         onTokenSuccess(res, commit);
         const { loginStatus, redirect: accountType } = res.data;
         const redirectUrl = accountType === "need_account_type"
-         ? commit("accountTypeMissing", true) || "/signup"
-         : getUserRedirectURL(loginStatus, accountType);
+          ? commit("accountTypeMissing", true) || "/signup"
+          : getUserRedirectURL(loginStatus, accountType);
 
         resolve(redirectUrl);
       });
@@ -98,7 +98,7 @@ const resetPassword = ({ commit }, data) => {
   });
 }
 
-const setAccountType = ({commit}, data) => {
+const setAccountType = ({ commit }, data) => {
   return new Promise((resolve) => {
     api.put('/user/login/social/type', data)
       .then(res => {
@@ -108,9 +108,14 @@ const setAccountType = ({commit}, data) => {
   });
 }
 
-const showCampaignInfluencers = ({commit}, campaign) => {
+const showCampaignInfluencers = ({ commit }, campaign) => {
   console.log('showCampaignInfluencers', campaign)
   commit(Mutations.SHOW_CAMPAIGN_INFLUENCERS, campaign);
+}
+
+const addToStateName = ({ commit }, data) => {
+  let $name = data.name;
+  commit('SET_NAME', $name)
 }
 
 export default {
@@ -122,5 +127,6 @@ export default {
   forgotPassword,
   resetPassword,
   setAccountType,
-  showCampaignInfluencers
+  showCampaignInfluencers,
+  addToStateName
 };

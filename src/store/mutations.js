@@ -32,5 +32,8 @@ export default {
     },
     [Mutations.HIDE_CAMPAIGN_INFLUENCERS](state, _) {
         state.showCampaignInfluencers = false;
-    }
+    },
+    SET_NAME(state, payload) {
+        state.inpScreen.name = payload;
+    },
 }

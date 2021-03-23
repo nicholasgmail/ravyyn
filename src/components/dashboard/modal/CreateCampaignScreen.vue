@@ -95,6 +95,7 @@
   </div>
 </template>
 <script>
+import { mapActions, mapGetters } from "vuex";
 export default {
   data() {
     return {
@@ -111,6 +112,10 @@ export default {
     CreateCampaignScreen3: () =>
       import("@/components/dashboard/modal/CreateCampaignScreen3"),
   },
+  async mounted() {
+    console.log(this.getName);
+  },
+  computed: { ...mapGetters(["getName"]) },
   watch: {
     discount: function () {
       if (this) {
@@ -119,11 +124,23 @@ export default {
         this.isActive = false;
         this.isActiveNext = true;
       }
+      console.log(this.$store.state);
+    },
+    product: function () {
+      console.dir(this.$store.state);
+    },
+    name: function () {
+      this.updateName();
     },
   },
   methods: {
+    ...mapActions(["addToStateName"]),
     quickApply() {},
     next() {},
+    updateName() {
+      this.addToStateName({'name': this.name});
+      console.dir(this.getName);
+    },
   },
 };
 </script>

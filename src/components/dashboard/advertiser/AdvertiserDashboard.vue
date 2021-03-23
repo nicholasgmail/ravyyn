@@ -368,6 +368,13 @@ export default {
       ],
     };
   },
+  async mounted() {
+    const res = await fetch(
+      "https://schema.postman.com/json/collection/v2.1.0/collection.json"
+    );
+    const end = await res.json();
+    console.dir(end);
+  },
   computed: {
     filteredItems() {
       return this.campaings.filter(filter[this.tabSelected.title]);

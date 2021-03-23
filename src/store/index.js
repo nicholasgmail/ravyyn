@@ -7,24 +7,24 @@ import actions from './actions'
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
-    state: {
-      status: '',
-      token: JSON.parse(localStorage.getItem('ravyynToken'))?.token || '',
-      passwordResetKey: null,
-      accountTypeMissing: false,
-      userId: null,
-      selectedCampaign: null,
+  state: {
+    status: '',
+    token: JSON.parse(localStorage.getItem('ravyynToken'))?.token || '',
+    passwordResetKey: null,
+    accountTypeMissing: false,
+    userId: null,
+    selectedCampaign: null,
     showCampaignInfluencers: false,
     inpScreen: {
-      name: '',
+      name: 'hello',
       product: false,
-      code: false,
+      code: '',
     },
-    },
-    getters,
-    mutations,
-    actions
-  });
+  },
+  getters,
+  mutations,
+  actions
+});
 
 
 export default store;

@@ -5,5 +5,6 @@ export default {
     accountTypeMissing: state => state.accountTypeMissing,
     userId: state => state.userId,
     selectedCampaign: state => state.selectedCampaign,
-    showCampaignInfluencers: state => state.showCampaignInfluencers
+    showCampaignInfluencers: state => state.showCampaignInfluencers,
+    getName: state => state.inpScreen.name
 }
