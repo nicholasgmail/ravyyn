@@ -1,13 +1,13 @@
 <template>
   <div class="campaignContainer">
     <div class="campaign columnFlex">
-      <div class="campaignPhotos" id="campaignPhotos" 
-          @mouseover="imgHover = true"
-          @mouseleave="imgHover = false">
-        <img
-          :class="{ filter: imgHover }"
-          :src="campaignImg"
-        />
+      <div
+        class="campaignPhotos"
+        id="campaignPhotos"
+        @mouseover="imgHover = true"
+        @mouseleave="imgHover = false"
+      >
+        <img :class="{ filter: imgHover }" :src="campaignImg" />
         <div
           v-show="imgHover"
           class="imgHover flex-column center"
@@ -89,32 +89,57 @@
       <p>{{ campaigDateTime }}</p>
     </div>
 
-  <!-- MODALS -->
+    <!-- MODALS -->
 
-  <b-modal id="campaignSettingsModal" size="lg" scrollable hide-footer body-class="center p-0">
-    <CampaignSettingsModal />
-  </b-modal>
-  
-  <b-modal id="applicantsModal" :title="`${campaign.campaignName} Applicants`" size="xl" scrollable hide-footer body-class="center p-0">
-    <ApplicantsModal :campaignId="campaign.id" />
-  </b-modal>
+    <b-modal
+      id="campaignSettingsModal"
+      size="lg"
+      scrollable
+      hide-footer
+      body-class="center p-0"
+    >
+      <CampaignSettingsModal />
+    </b-modal>
 
-  <b-modal id="shippingAddressModal" size="lg" scrollable hide-footer body-class="center p-0">
-     <ShippingAddressModal />
-  </b-modal>
+    <b-modal
+      id="applicantsModal"
+      :title="`${campaign.campaignName} Applicants`"
+      size="xl"
+      scrollable
+      hide-footer
+      body-class="center p-0"
+    >
+      <ApplicantsModal :campaignId="campaign.id" />
+    </b-modal>
 
-  <b-modal id="moveFolderModal" title="Move to Folder" size="md" scrollable hide-footer body-class="center p-0">
-     <MoveFolderModal />
-  </b-modal>
+    <b-modal
+      id="shippingAddressModal"
+      size="lg"
+      scrollable
+      hide-footer
+      body-class="center p-0"
+    >
+      <ShippingAddressModal />
+    </b-modal>
 
+    <b-modal
+      id="moveFolderModal"
+      title="Move to Folder"
+      size="md"
+      scrollable
+      hide-footer
+      body-class="center p-0"
+    >
+      <MoveFolderModal />
+    </b-modal>
   </div>
 </template>
 
 <script>
-import CampaignSettingsModal from '@/components/campaign/modals/CampaignSettingsModal'
-import ApplicantsModal from '@/components/campaign/modals/ApplicantsModal'
-import ShippingAddressModal from '@/components/campaign/modals/ShippingAddressModal'
-import MoveFolderModal from '@/components/campaign/modals/MoveFolderModal'
+import CampaignSettingsModal from "@/components/campaign/modals/CampaignSettingsModal";
+import ApplicantsModal from "@/components/campaign/modals/ApplicantsModal";
+import ShippingAddressModal from "@/components/campaign/modals/ShippingAddressModal";
+import MoveFolderModal from "@/components/campaign/modals/MoveFolderModal";
 
 import ClickOutside from "vue-click-outside";
 import dayjs from "dayjs";
@@ -126,7 +151,7 @@ export default {
     CampaignSettingsModal,
     ApplicantsModal,
     ShippingAddressModal,
-    MoveFolderModal
+    MoveFolderModal,
   },
   directives: {
     ClickOutside,
@@ -165,17 +190,16 @@ export default {
   },
   methods: {
     onImgClick(e) {
-      this.$store.dispatch('showCampaignInfluencers', this.campaign);
+      this.$store.dispatch("showCampaignInfluencers", this.campaign);
     },
     clickOutside() {
-        this.dropdownCampaignShow=false;
-    }
+      this.dropdownCampaignShow = false;
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-
 .imgHover {
   display: flex;
   position: absolute;
@@ -208,10 +232,9 @@ export default {
 @media only screen and (max-width: 730px) {
   .campaignInfo {
     justify-content: unset;
-    position:unset;
+    position: unset;
     left: 0;
     align-items: center;
   }
 }
-
 </style>

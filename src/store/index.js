@@ -14,7 +14,12 @@ const store = new Vuex.Store({
       accountTypeMissing: false,
       userId: null,
       selectedCampaign: null,
-      showCampaignInfluencers: false
+    showCampaignInfluencers: false,
+    inpScreen: {
+      name: '',
+      product: false,
+      code: false,
+    },
     },
     getters,
     mutations,

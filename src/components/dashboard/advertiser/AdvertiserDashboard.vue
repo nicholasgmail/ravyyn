@@ -236,39 +236,47 @@
       ref="newCampaignModal"
       hide-footer
       hide-header
-      modal-class="d-flex bg-transparent border-0"
+      modal-class="bg-transparent border-0"
     >
-      <!--  <div id="new-campaign-modal"> -->
       <!-- <NewCampaignModal /> -->
-      <!-- <div class="modal-dialog" role="document"> -->
-      <b-container class="modal-content position-relative rounded-0 border-0">
-        <!-- close btn -->
-        <button
-          @click="hideModal"
-          class="modal-close position-absolute bg-transparent border-0 font-orelo"
-          data-dismiss="modal"
-          id="login-popup-close"
-        >
-          X
-        </button>
+      <div class="d-flex">
+        <b-container class="modal-content position-relative rounded-0 border-0">
+          <!-- close btn -->
+          <button
+            @click="hideModal"
+            class="modal-close position-absolute bg-transparent border-0 font-orelo"
+            data-dismiss="modal"
+            id="login-popup-close"
+          >
+            X
+          </button>
 
-        <!--   <img
-        src="./assets/icons/arrow-left.svg"
-        id="newCampaignDiscountCodeBackArrow"
-        onclick="discountCodeStartCustomAdBack()"
-      />
-      <img
-        src="./assets/icons/arrow-left.svg"
-        id="newCampaignDiscountCodeBackArrowUser"
-        onclick="discountCodeStartUserAdBack()"
-      /> -->
-        <first-screen />
-        <!--   </div>
-        </div>
-        </div> -->
-      </b-container>
+          <img
+            src="/assets/icons/arrow-left.svg"
+            id="newCampaignDiscountCodeBackArrow"
+            onclick="discountCodeStartCustomAdBack()"
+          />
+          <img
+            src="/assets/icons/arrow-left.svg"
+            id="newCampaignDiscountCodeBackArrowUser"
+            onclick="discountCodeStartUserAdBack()"
+          />
+          <div class="modal-wrap mx-auto">
+            <!-- Upload or Create modal -->
+            <first-screen
+              v-if="screen_1"
+              @newCampaign="(screen_1 = false), (screen_2 = true)"
+            />
+            <!-- 2st screen -->
+            <create-campaign-screen
+              v-if="screen_2"
+              @slide_3="(screen_2 = false), (screen_3 = true)"
+            />
+            <!-- end 2st Upload or Create modal -->            
+          </div>
+        </b-container>
+      </div>
     </b-modal>
-
     <!-- <iframe id="newCampaign" src=""></iframe> -->
   </main>
 </template>
@@ -292,9 +300,14 @@ export default {
   components: {
     Campaigns,
     FirstScreen: () => import("@/components/dashboard/modal/FirstScreen"),
+    CreateCampaignScreen: () =>
+      import("@/components/dashboard/modal/CreateCampaignScreen"),    
   },
   data() {
     return {
+      screen_1: true,
+      screen_2: false,
+      screen_3: false,
       statSelectedIndex: 1,
       stats: [
         {
@@ -384,11 +397,17 @@ export default {
   },
   methods: {
     newCampaignButton(e) {},
+    newCampaign() {
+      console.log("hello");
+    },
     showModal() {
       this.$refs["newCampaignModal"].show();
     },
     hideModal() {
       this.$refs["newCampaignModal"].hide();
+      this.screen_1 = true;
+      this.screen_2 = false;
+      this.screen_3 = false;
     },
     setStatSelected(index) {
       this.statSelectedIndex = index;
